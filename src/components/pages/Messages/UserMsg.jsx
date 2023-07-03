@@ -153,6 +153,7 @@ function UserMsg() {
   const onEmojiClick = (emojiObject) => {
     const emoji = emojiObject.emoji;
     setMessage((prevMessage) => prevMessage + emoji);
+    setIsTyping(true);
     inputRef.current.focus(); // Focus on the input field after clicking the emoji
   };
 

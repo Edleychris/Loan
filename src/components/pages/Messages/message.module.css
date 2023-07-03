@@ -164,6 +164,7 @@ a{
     border-radius: 5px;
     padding: 10px;
     background-color: white;
+    position: fixed;
 }
 .user_Msg_input{
     width: 900px;
@@ -192,4 +193,5 @@ a{
     position: absolute;
     top: -26rem;
     left: 20rem;
+    background-color: red;
 }
