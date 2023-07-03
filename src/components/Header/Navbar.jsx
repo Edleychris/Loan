@@ -9,6 +9,7 @@ import DropNotify from "../Header/Dropdowns/DropNotify";
 import Dropmsg from "../Header/Dropdowns/Dropmsg";
 import PropTypes from "prop-types";
 import { AvatarInfo } from "../../Context";
+import { BsFillRecordFill } from "react-icons/bs";
 
 function Navbar({ handleLogout }) {
   const [open, setOpen] = useState(false);
@@ -89,7 +90,9 @@ function Navbar({ handleLogout }) {
             ) : ( 
               <img src={img2} alt="" />
             )}
+
           </a>
+          <span><BsFillRecordFill className={navstyle.bsfillrecordfill}/></span>
         </div>
       </div>
 

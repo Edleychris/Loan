@@ -9,24 +9,6 @@
     justify-content: center;
     z-index: 99;
 }
-
-/* .nav_container {
-    position: fixed;
-    background: #FFFFFE;
-    align-items: center;
-    grid-area: navbar;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFFFFE;
-    padding: 24.5px;
-    margin-top: -1rem;
-    margin-left: -1rem;
-    width: 1325px;
-    height: 86px;
-    z-index: 1;
-    border: 1px solid black;
-} */
-
 .nav {
     display: flex;
     align-items: center;
@@ -34,15 +16,12 @@
     height: 60px;
     width: 100%;
     background-color: white;
-    /* left: calc(50% - 1325px/2 - 26.5px); */
-    /* background-color: rgb(202, 168, 168); */
 }
 
 .nav .links {
     width: 120px;
     display: flex;
     justify-content: space-between;
-    /* margin-right: 24px; */
     margin-right: 5rem;
     align-items: center;
 
@@ -67,4 +46,10 @@
     border-radius: 50%;
     border: 2px solid #04297F;
 
+}
+.bsfillrecordfill{
+    color: rgb(108, 218, 108);
+    position: absolute;
+    top: 1.9rem;
+    margin-left: -1.5rem;
 }

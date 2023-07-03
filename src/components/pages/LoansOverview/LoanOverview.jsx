@@ -67,7 +67,7 @@ export const LoanOverview = () => {
         <div className={css.overviewInfoNav}>
           <Link to="/dashboard">Home</Link>
           <BiChevronRight className={css.icon} />
-          <Link to="/settings">All Clients</Link>
+          <Link to="/clients">All Clients</Link>
           <BiChevronRight className={css.icon} />
           <Link to="#">Clients Overview</Link>
           <BiChevronRight className={css.icon} />
