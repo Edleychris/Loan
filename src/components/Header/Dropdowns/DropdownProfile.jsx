@@ -42,7 +42,7 @@ function DropdownProfile({ onClose }) {
           <Link to="/settings/profile">
             <li onClick={handleItemClick}>Profile Settings</li>
           </Link>
-          <Link to='/login'><li
+          <Link to='/signup'><li
             style={{ cursor: 'pointer', color: 'red' }}
             onClick={() => {
               handleLogout();
