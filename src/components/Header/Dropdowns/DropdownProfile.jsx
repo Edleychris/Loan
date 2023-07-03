@@ -26,7 +26,7 @@ function DropdownProfile({ onClose }) {
     localStorage.removeItem('token');
     // setLoggedIn(false);
     // Redirect the user to the login page
-    window.location.href = '/login';
+    // window.location.href = '/login';
   };
 
   return (
