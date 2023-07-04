@@ -157,6 +157,8 @@
   font-size: 12px;
   color: red;
   position: absolute;
+  width: 400px;
+
 }
 
 .logo {
@@ -254,6 +256,9 @@
 .form_input{
   width: 300px;
 }
+.errMsg{
+  width: 300px;
+}
 .input{
   display: flex;
   justify-content: center;
@@ -274,6 +279,9 @@
 
 }
 @media screen and (max-width: 800px){
+  body{
+    background-color: red;
+  }
   .body{
     display: flex;
     justify-content: center;
@@ -298,4 +306,23 @@
   height: 40px;
   position: absolute;
 }
+}
+@media screen and (max-width: 600px){
+  .logo {
+    margin-top: -14rem;
+  }
+}
+@media screen and (max-width: 500px){
+  body{
+    background-color: purple;
+  }
+  .main_login{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 3rem;
+  
+   }
+   .logo {
+    margin-top: -7rem;
+  }
 }
