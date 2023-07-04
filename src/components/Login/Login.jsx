@@ -120,7 +120,6 @@ const Login = () => {
         </div>
         <div className={styles.right_login_page}>
           <img src={logo} alt="logo" className={styles.logo} />
-
           <div className={styles.main_login}>
             <h2 className={styles.welcome}>Welcome Back</h2>
 

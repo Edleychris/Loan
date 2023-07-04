@@ -1,0 +1,15 @@
+.avatar_icon{
+    height: 140px;
+    width: 140px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar_initials{
+    font-size: 70px;
+    color: black;
+    font-weight: 700;
+}

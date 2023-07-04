@@ -11,21 +11,25 @@
   box-sizing: border-box;
   justify-content: space-between;
 }
+.password{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 .login__icon {
   position: absolute;
   right: 0;
-  top: 10.8rem;
-  margin-right: 1rem;
+  padding-right: 10px;
+  margin-bottom: .5rem;
+  font-size: 28px;
 }
 .body {
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 10rem;
-  /* justify-content: center; */
-
   margin: 0;
   padding: 0;
 }
@@ -95,11 +99,9 @@
   flex-direction: column;
   gap: 20px;
   width: 500px;
-  /* margin-bottom: 5rem; */
   border: transparent;
   outline: none;
   transition: all 0.5s;
-  /* background-color: red; */
 }
 .sidepic {
   height: 750px;
@@ -110,7 +112,6 @@
   align-items: center;
   gap: 5px;
 }
-
 .signuptext {
   color: #717070;
   font-weight: 700;
@@ -127,7 +128,6 @@
 .link {
   color: rgb(2, 2, 42);
 }
-
 .reveal {
   position: absolute;
   z-index: 2;
@@ -143,7 +143,6 @@
   font-style: italic;
   color: rgb(2, 2, 42);
   font-weight: 700;
-  /* margin-top: 1rem; */
   font-size: 16px;
   line-height: 24px;
   display: flex;
@@ -152,15 +151,12 @@
   text-align: center;
   margin-top: -.1rem;
   text-decoration: none;
-  /* background-color: red; */
 }
+
 .errMsg {
   font-size: 12px;
-  /* margin-top: 1rem; */
-  /* margin-bottom: .5rem; */
   color: red;
   position: absolute;
-  /* background-color: purple; */
 }
 
 .logo {
@@ -170,69 +166,136 @@
   margin-top: -30rem;
 }
 .right_login_page{
-    /* display: flex; */
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
-    /* position: relative; */
-
 }
 
-@media (min-width: 500px) and (max-width: 768px){
-    .right_login_page{
-        justify-content: center;
-        /* background-color: red; */
-        display: flex;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
 
-    }
-    .body{
-        display: flex;
-        align-items: center ;
-        justify-content: space-evenly;
-        background-color: blue;
-    }
-    /* .login__icon {
-        top: 10.7rem;
-        margin-right: 4rem;
-      }
-      .sidepic {
-        display: none;
-      }
-      .input {
-        gap: 25px;
-      }
-      
-      .form_input {
-        height: 54px;
-        width: 460px;
-        padding: 20px;
-        font-size: 16px;
-      }
-      .logo {
-        margin-top: -48rem;
-      } */
-      .main_login {
-        display: flex;
-        align-items: center;
-        /* margin-left: -6rem;  */
-        /* display: flex; */
-        justify-content: center;
-        background-color: red;
-        /* width: 400px; */
+@media screen and (max-width: 1200px) {
+  .sidepic{
+    width: 450px;
+    height: 100vh;
+  }
+  .body{
+    gap: 8rem;
+  }
+.main_login{
+  margin-left: -2rem;
+}
+.login_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_input{
+  width: 400px;
+}
+.input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.password{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.login__icon {
+  position: absolute;
+  right: 0;
+  font-size: 28px;
+}
+.login{
+  width: 400px;
+}
+.forgotpwd {
+  width: 400px;
+}
+.login {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.logo {
+  margin-left: -3rem;
+  margin-top: -25rem;
+}
+}
+@media screen and (max-width: 1050px){
+  .sidepic{
+    width: 350px;
+    height: 100vh;
+  }
+  .body{
+    gap: 8rem;
+  }
+.main_login{
+  margin-left: -2rem;
+}
+.logo {
+  margin-top: -10rem;
+}
 
+}
+@media screen and (max-width: 950px){
+  .sidepic{
+    width: 350px;
+    height: 100vh;
+  }
+  .body{
+    gap: 3rem;
+  }
+.main_login{
+  margin-left: -4rem;
+  margin-top: -5rem;
+}
+.form_input{
+  width: 300px;
+}
+.input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login{
+  width: 300px;
+}
+.forgotpwd {
+  width: 300px;
+}
+.logo {
+  margin-left: -1rem;
+  margin-top: -25rem;
+  height: 40px;
+  position: absolute;
+}
 
-      }
-      .sidepic {
-        display: none;
-      }
-      .login {
-        width: 460px;
-      }
-      .forgotpwd {
-        width: 460px;
-      }
+}
+@media screen and (max-width: 800px){
+  .body{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .sidepic{
+    display: none;
+  }
+  .right_login_page{
+    max-height: 25rem;
+  }
+ .main_login{
+  width: 100vw;
+  height: 100vh;
+  margin-top: 1rem;
+
+ }
+ .logo {
+  margin-left: -3rem;
+  margin-top: -5rem;
+  height: 40px;
+  position: absolute;
+}
 }
