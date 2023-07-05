@@ -279,9 +279,9 @@
 
 }
 @media screen and (max-width: 800px){
-  body{
+  /* body{
     background-color: red;
-  }
+  } */
   .body{
     display: flex;
     justify-content: center;
@@ -302,10 +302,50 @@
  }
  .logo {
   margin-left: -3rem;
-  margin-top: -5rem;
+  margin-top: -15rem;
   height: 40px;
   position: absolute;
 }
+.form_input{
+  width: 500px;
+  height: 60px;
+}
+.errMsg{
+  width: 500px;
+}
+.login{
+  height: 60px;
+  width: 500px;
+}
+.forgotpwd {
+  width: 500px;
+}
+}
+@media screen and (max-width: 700px){
+  /* body{
+    background-color: blue;
+  } */
+  .logo {
+    margin-left: -3rem;
+    margin-top: -15rem;
+    height: 40px;
+    position: absolute;
+  }
+  .form_input{
+    width: 400px;
+    height: 60px;
+  }
+  .errMsg{
+    width: 400px;
+  }
+  .login{
+    height: 60px;
+    width: 400px;
+  }
+  .forgotpwd {
+    width: 400px;
+  }
+
 }
 @media screen and (max-width: 600px){
   .logo {
@@ -313,16 +353,90 @@
   }
 }
 @media screen and (max-width: 500px){
-  body{
+  /* body{
     background-color: purple;
-  }
+  } */
   .main_login{
     width: 100vw;
     height: 100vh;
-    margin-top: 3rem;
+    margin-top: 1rem;
+  
+   }
+   .logo {
+    margin-top: -14rem;
+  }
+  .form_input{
+    width: 400px;
+    height: 50px;
+  }
+  .errMsg{
+    width: 400px;
+  }
+  .login{
+    height: 60px;
+    width: 400px;
+  }
+  .forgotpwd {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  /* body{
+    background-color: orange;
+  } */
+  .main_login{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0rem;
   
    }
    .logo {
     margin-top: -7rem;
+  }
+  .form_input{
+    width: 300px;
+    height: 50px;
+  }
+  .errMsg{
+    width: 300px;
+  }
+  .login{
+    height: 50px;
+    width: 300px;
+  }
+  .forgotpwd {
+    width: 300px;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 420px){
+  /* body{
+    background-color: gold;
+  } */
+  .main_login{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 2.5rem;
+    margin-left: -3rem;
+  
+   }
+   .logo {
+    margin-top: -11rem;
+  }
+}
+@media screen and (max-width: 360px){
+  /* body{
+    background-color: violet;
+  } */
+  .main_login{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 3.5rem;
+    margin-left: -3rem;
+  
+   }
+   .logo {
+    margin-top: -4.5rem;
   }
 }
