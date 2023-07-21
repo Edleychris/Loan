@@ -13,27 +13,6 @@ import Signup from './components/Signup/Signup';
 import ForgotPwd from "./components/ForgotPwd/ForgotPwd";
 import Token from './components/Token/Token';
 import Confirmation from './components/Confirmation/Confirmation'
-import Dashboard from "./components/pages/Dashboard/Dashboard";
-import LoanTab from "./components/pages/Loans/LoanTab";
-import Profile from "./components/pages/Profile/Profile";
-import UserMsg from "./components/pages/Messages/UserMsg";
-import Messages from "./components/pages/Messages/Messages";
-import Notifications from "./components/pages/Notifications/Notifications";
-import { Settings } from "./components/pages/SettingsPage/Settings";
-import { Clients } from "./components/pages/Loans/AllLoans/Clients";
-import { ProfileSettings } from "./components/pages/SettingsPage/ProfileSettings/ProfileSettings";
-import Report from "./components/pages/Report/Report";
-import AllUserPermission from './components/pages/SettingsPage/UserPermission/AllUserPermission'
-import { Notification } from "./components/pages/SettingsPage/NotificationPage/Notification";
-import { Security } from "./components/pages/SettingsPage/Security/Security";
-import Support from "./components/pages/Support/Support";
-import Faq from "./components/pages/Support/Faq";
-import { LoanOverview } from "./components/pages/LoansOverview/LoanOverview";
-import { LoansContract } from "./components/pages/LoansOverview/LoansContract";
-import Overview from "./components/pages/ClientOverview/overview/Overview";
-import LoanDetails from "./components/pages/ClientOverview/overview/LoanDetails";
-import RiskScore from "./components/pages/ClientOverview/overview/RiskScore";
-import Documents from "./components/pages/ClientOverview/overview/Documents";
 import {RouteGuard} from './RouteGuard';
 import { useLocation } from "react-router-dom";
 import {Compile} from './Compile';
@@ -88,9 +67,6 @@ function App() {
     window.location.href = '/login';
   };
 
-  // const handleItemSelected = (item) => {
-  //   setSelectedItem(item);
-  // };
 
   return (
     <div className="App">

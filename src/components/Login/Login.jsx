@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useRef } from "react";
 import styles from "./login.module.css";
 import business from "../images/business guy.png";
 import { Link, useNavigate } from "react-router-dom";
@@ -7,6 +6,8 @@ import logo from "../../assets/Group 7753.svg";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import axios from "axios";
 import { SpinnerCircular } from "spinners-react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const INITIAL = { email: "", password: "" };
 
@@ -81,24 +82,68 @@ const Login = () => {
 
     
     setTimeout(() => {
+      const { email, password } = form;
+      const userData = {
+        email,
+        password,
+      };
       axios
         .post(
           "https://loanifyteama-production.up.railway.app/api/v1/auth/login",
-          form
+          userData
         )
         .then((response) => {
           console.log(response.data);
           localStorage.setItem("token", response.data.token);
-          if (response.data.status == true) {
-            navigate("/token");
+          if (response.data.status === true) {
+          localStorage.setItem("token", response.data.token);
+            navigate("/dashboard");
+            toast.success('Login successful', {
+              position: 'top-center',
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              theme: 'colored',
+            });
+          } else {
+            // toast.success('Login successful', {
+            //   position: 'top-center',
+            //   autoClose: 5000,
+            //   hideProgressBar: false,
+            //   closeOnClick: true,
+            //   pauseOnHover: true,
+            //   draggable: true,
+            //   theme: 'colored',
+            // });
+            toast.error(
+              "Invalid. Please sign up first."
+            );
+            // setErrorUI({
+            //   email: [{ message: 'The email and password combination is not valid. Please sign up first.' }],
+            //   password: [{ message: 'The email and password combination is not valid. Please sign up first.' }],
+            // });
           }
         })
         .catch((error) => {
           console.error(error);
           if (error.message === "Request failed with status code 404") {
-            setErrMsg("Incorrect email or password. Try again!");
+            toast.error(
+              "Invalid. Please sign up first."
+            );
+            setErrorUI("Incorrect email or password. Try again!");
           } else {
-            navigate("/token");
+            navigate("/dashboard");
+            toast.success('Login successful', {
+              position: 'top-center',
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              theme: 'colored',
+            });
           }
         })
         .finally(() => {
@@ -114,6 +159,7 @@ const Login = () => {
 
   return (
     <div className={styles.bodyContainer}>
+      <ToastContainer />
       <section className={styles.body}>
         <div>
           <img src={business} alt="picture" className={styles.sidepic} />

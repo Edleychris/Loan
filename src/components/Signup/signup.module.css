@@ -1,32 +1,21 @@
 .signup_container{
-  /* display: flex; */
-  /* align-items: center; */
-  /* width: 100%; */
-  /* height: max-content; */
   background-color: rgba(240, 244, 252, 0.8);
   overflow-y: hidden;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
-  /* justify-content: space-between; */
 }
 .signup_body{
     width: 100vw;
     height: 100vh;
     display: flex;
-    /* background-color: red; */
     align-items: center;
-    /* justify-content: space-between; */
-    /* gap: 6rem; */
-    /* justify-content: center; */
     margin: 0;
   padding: 0;
   text-align: center;
 }
 .section{
  display: flex;
-  /* flex-direction: row; */
   align-items: center;
   justify-content: center;
   font-family: "Helvetica";
@@ -37,21 +26,15 @@
 }
 .logo{
     left: 0;
-    /* margin-right: 10rem; */
   margin-left: 4rem;
   width: 150px;
     margin-top: -35.5rem;
     position: absolute;
 }
 .formContainer{
-    /* margin-left: -5.5rem; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     justify-content: center;
     margin-top: 7rem;
     width: 40rem;
-    /* background-color: red; */
     height: 100%;
 }
 .signupheading{
@@ -73,7 +56,6 @@
     align-items: flex-start;
   background: transparent;
   margin-bottom: 1rem;
-    /* padding-left: 5rem; */
 }
 
 .signupPasswordBlock__icon{

@@ -23,7 +23,6 @@ const Signup = () => {
   const [showPassword, setShowPassword] = useState(false)
   const navigate = useNavigate();
 
-  // const dispatch = useDispatch();
 
   const VALIDATION = {
     firstName: [

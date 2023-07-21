@@ -43,7 +43,7 @@ const Confirmation = () => {
                 <Link to='/signup' className={con.link}>Go back to Sign Up page</Link>
         </section>
 
-        <Link to='/login' className={con.next}>Next &gt; &gt; </Link>
+        <Link to='/token' className={con.next}>Next &gt; &gt; </Link>
 
         {showSignUpConfirmation && <SignUpConfirmation handleClosePop={handleClosePop}/>}
     </div>

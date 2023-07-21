@@ -16,7 +16,6 @@ function Navbar({ handleLogout, selectedItem }) {
   const [open, setOpen] = useState(false);
   const [showNotify, setShowNotify] = useState(false);
   const [showMsg, setShowMsg] = useState(false);
-//   const [logout, setLogout] =useState(false)
 
   const history = useHistory();
 
@@ -40,15 +39,6 @@ function Navbar({ handleLogout, selectedItem }) {
     setShowNotify(false);
     setShowMsg(!showMsg);
   };
-
-//   const handleLogoutClick = () => {
-//     console.log("logout")
-    // handleLogout();
-    // localStorage.removeItem('token');
-    // history.push('/login');
-    // setLogout(logout)
-
-//   };
 
   return (
     <div className={navstyle.navbar}>

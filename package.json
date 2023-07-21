@@ -17,6 +17,8 @@
     "axios": "^1.4.0",
     "emoji-picker-react": "^4.4.9",
     "firebase": "^9.22.2",
+    "js-cookie": "^3.0.5",
+    "nanoid": "^4.0.2",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-csv": "^2.2.2",
