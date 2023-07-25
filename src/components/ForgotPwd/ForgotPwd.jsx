@@ -109,7 +109,10 @@ const ForgotPwd = () => {
                 <img src={sidepic} alt="sidepic" className={forgot.sideimg} />
             </div>
             <div className={forgot.right_side}>
-            <img src={logo} alt="logo" className={forgot._logo_forgot} />
+              <div className={forgot.right_logo}>
+              <img src={logo} alt="logo" className={forgot._logo_forgot} />
+
+              </div>
 
                 <div className={forgot.forgot_details}>
                     <h1 className={forgot.forgot_text}>Forgot Password?</h1>
@@ -135,7 +138,7 @@ const ForgotPwd = () => {
                     {showResetConfirmation ? (
   <FgtPswdConfirm />
 ) : (
-  <div>
+  <div className={forgot.button_div}>
     <button type="submit" className={forgot.reset_btn}>
       Submit
     </button>
@@ -161,7 +164,8 @@ const ForgotPwd = () => {
 )}
                 </form>
             </div>
-                </div> </div>
+                </div> 
+                </div>
             // </div>
     );
 }

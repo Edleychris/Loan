@@ -97,12 +97,14 @@ export const ResetPassword = ({ onSuccess }) => {
 
   return (
     <div className={style.reset_holder}>
-      <div className={style.reset_holder_section}>
+      {/* <div className={style.reset_holder_section}> */}
         <div className={style.image}>
           <img src={sidepic} alt="sidepic" className={style.sideimg} />
         </div>
         <div className={style.reset__whole}>
+        <div className={style.right_logo}>
           <img src={logo} alt="logo" className={style.reset_logo} />
+          </div>
 
           <div className={style.reset_details}>
             <h1 className={style.reset_text}>Reset Password</h1>
@@ -162,7 +164,7 @@ export const ResetPassword = ({ onSuccess }) => {
                 </p>
               </div>
 
-              <div></div>
+              {/* <div></div> */}
               <button
                 type="submit"
                 className={style.changePasswordBtn}
@@ -183,6 +185,6 @@ export const ResetPassword = ({ onSuccess }) => {
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };

@@ -1,52 +1,51 @@
 .holder{
   display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 1400px;
-  height: max-content;
-  background-color: rgba(240, 244, 252, 0.8);
-  overflow-y: hidden;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  justify-content: space-between;
- }
-.holder_body{
-  width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  gap: 10rem;
-}
+  background-color: rgba(240, 244, 252, 0.8);
+  max-width: 1400px;
+  width: 100vw;
+ }
 .forgotPwdText{
     color: rgb(194, 189, 189);
     font-size: 14px;
     font-style: italic;
     font-weight: 400;
-}
-.forgot_input::placeholder{
-    font-size: 14px;
-    font-weight: 600;
-}
-.sideimg{
-    height: 750px;
-    width: 498px;
+    display: flex;
+    width: 500px;
 }
 
+.image{
+  flex: 1;
+  overflow: hidden;
+}
+.sideimg{
+  height: 100%;
+  object-fit: fill;
+  width: 90%;
+  display: block;
+}
+.right_logo{
+  left: 0;
+  margin-left: 4rem;
+  top: 0;
+  margin-top: 9rem;
+  position: absolute;
+}
 .forgot_details{
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Helvetica";
-  position: relative;
-  z-index: 2;
-
+  width: 100%;
 }
 .right_side{
+    flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    width: 100%;
 }
 .forgot_text{
   font-family: Helvetica;
@@ -61,7 +60,6 @@
 .errMsg {
   color: red;
   font-size: 8px;
-  position: absolute;
   top: 8rem;
   bottom: 0;
 }
@@ -113,7 +111,7 @@
     margin-top: 5px;
     margin-left: .5rem;
 }
-.right_side ._logo_forgot{
+._logo_forgot{
     height: 220px;
     width: 150px;
     background-color: transparent;
@@ -137,4 +135,96 @@
     align-self: center;
     justify-content: center;
     cursor: pointer;
+}
+.forgot_form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+}
+.button_div{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1020px) {  
+.forgot_input{
+  width: 80%;
+}
+.reset_btn{
+  width: 80%;
+}
+.forgotPwdText{
+  width: 80%;
+
+}
+}
+
+@media screen and (max-width: 850px) {
+  .image{
+    display: none;
+  }
+  .right_logo{
+    margin-left: 8rem;
+  }
+  .forgot_form{
+    width: 60%;
+  
+  }
+  .email_input{
+    width: 100%;
+  }
+  .forgot_input{
+    width: 100%;
+  }
+  .forgotPwdText{
+    width: 100%;
+  }
+  .reset_btn{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .forgot_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+ .forgot_text{
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+ }
+ ._logo_forgot{
+  height: 220px;
+  width: 100px;
+ }
+}
+@media screen and (max-width: 350px) {
+  .forgot_text{
+    font-size: 20px;
+   }
+   .forgot_input{
+    height: 40px;
+    font-size: 14px
+  }
+  .forgot_input::placeholder{
+    font-size: 14px
+  }
+  .reset_btn{
+    height: 40px;
+    font-size: 14px
+  }
+  .forgotPwdText{
+    font-size: 10px;
+  }
+  ._logo_forgot{
+    height: 220px;
+    width: 80px;
+   }
 }

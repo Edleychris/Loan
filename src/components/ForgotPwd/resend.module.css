@@ -1,7 +1,6 @@
 .Resendclose{
     display: flex;
     justify-content: end;
-    /* background-color: red; */
 }
 .Resendclose img{
     position: absolute;
@@ -14,20 +13,63 @@
     border-radius: 10px;
     align-items: center;
     position: absolute;
-    border: 1px solid #04297F;
+    border: 1.5px solid #0744d3;
     background: #FFFFFE;
-    top: -2rem;
-    width: 500px;
-    height: 330px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    top: 10rem;
+    margin-right: 3rem;
+    width: 550px;
+    height: 300px;
+    max-width: 1400px;
     transition: background-color 0.4s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .Resend_confirmation{
-    display: grid;
+    display: flex;
     place-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 .Resend_confirmation p{
     font-weight: 700;
     font-size: 16px;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1200px) {  
+    .ResendcomfirmationContainer{
+        width: 100%;
+    }
+    }
+@media screen and (max-width: 1100px) { 
+    .ResendcomfirmationContainer{
+        width: 105%;
+    } 
+}
+@media screen and (max-width: 1055px) { 
+    .ResendcomfirmationContainer{
+        width: 107%;
+    } 
+}
+@media screen and (max-width: 950px) { 
+    .ResendcomfirmationContainer{
+        width: 90%;
+    } 
+}
+@media screen and (max-width: 850px) { 
+    .ResendcomfirmationContainer{
+        margin-right: 0rem;
+        width: 70%;
+    } 
+}
+@media screen and (max-width: 560px) {  
+    .ResendcomfirmationContainer{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 350px) {  
+    .Resend_confirmation p{
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+    }
 }

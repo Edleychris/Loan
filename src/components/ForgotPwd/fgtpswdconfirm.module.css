@@ -6,10 +6,11 @@
     position: absolute;
     border: 1.5px solid #0744d3;
     background: #FFFFFE;
-    top: -2rem;
-    right: -2rem;
+    top: 8rem;
+    margin-right: 3rem;
     width: 550px;
     height: 300px;
+    max-width: 1400px;
     transition: background-color 0.4s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -27,4 +28,38 @@
 .Fogot_reset{
     font-weight: 700;
     font-size: 16px;
+    text-align: center;
+    display: flex;
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 1200px) {  
+    .FogotcomfirmationContainer{
+        width: 100%;
+    }
+    }
+@media screen and (max-width: 1100px) { 
+    .FogotcomfirmationContainer{
+        width: 105%;
+    } 
+}
+@media screen and (max-width: 950px) { 
+    .FogotcomfirmationContainer{
+        width: 90%;
+    } 
+}
+@media screen and (max-width: 850px) { 
+    .FogotcomfirmationContainer{
+        margin-right: 0rem;
+        width: 70%;
+    } 
+}
+@media screen and (max-width: 560px) {  
+    .FogotcomfirmationContainer{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 350px) {  
+    .Fogot_reset{
+        font-size: 14px;
+    }
 }
