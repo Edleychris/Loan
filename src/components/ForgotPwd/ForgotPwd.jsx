@@ -4,7 +4,6 @@ import sidepic from '../images/business guy.png';
 import logo from '../../assets/Group 7753.svg';
 import { FgtPswdConfirm } from './FgtPswdConfirm';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import Resend from './Resend';
 
 
@@ -41,13 +40,10 @@ const ForgotPwd = () => {
             if (!VALIDATION[key]) return acc;
     
             const errorsPerField = VALIDATION[key]
-                // get a list of potential errors for each field
-                // by running through all the checks
                 .map((validation) => ({
                     isValid: validation.isValid(form[key]),
                     message: validation.message,
                 }))
-                // only keep the errors
                 .filter((errorPerField) => !errorPerField.isValid);
         
             return { ...acc, [key]: errorsPerField };
@@ -106,7 +102,7 @@ const ForgotPwd = () => {
 
     return (
         <div className={forgot.holder}>
-          <div className={forgot.holder_body} >
+          {/* <div className={forgot.holder_body} > */}
 
          
             <div className={forgot.image}>
@@ -166,7 +162,7 @@ const ForgotPwd = () => {
                 </form>
             </div>
                 </div> </div>
-            </div>
+            // </div>
     );
 }
 

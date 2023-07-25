@@ -1,14 +1,8 @@
 .holder{
-    /* width: 100vw;
-  height: max-content;
-  overflow-y: hidden;
-  overflow-x: hidden;
-    display: flex;
-    gap: 140px;
-    background-color: rgba(240, 244, 252, 0.8); */
-    display: flex;
+  display: flex;
   align-items: center;
   width: 100%;
+  max-width: 1400px;
   height: max-content;
   background-color: rgba(240, 244, 252, 0.8);
   overflow-y: hidden;
@@ -17,16 +11,13 @@
   padding: 0;
   box-sizing: border-box;
   justify-content: space-between;
-
-}
+ }
 .holder_body{
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 10rem;
-  /* justify-content: center; */
 }
 .forgotPwdText{
     color: rgb(194, 189, 189);
@@ -69,13 +60,10 @@
 }
 .errMsg {
   color: red;
-  /* margin-top: 4rem; */
   font-size: 8px;
   position: absolute;
   top: 8rem;
   bottom: 0;
-  
-  /* margin-bottom: 10px; */
 }
 .email_input{
   display: flex;
@@ -85,9 +73,7 @@
   outline: none;
   transition: all 0.5s;
   margin-bottom: 1.2rem;
-  /* background-color: green; */
 }
-
 .forgot_input{
     height: 54px;
   width: 500px;
@@ -99,15 +85,10 @@
   padding: 20px;
   font-size: 18px;
   border-radius: 8px;
-  /* margin-top: 3rem; */
-  /* background-color: red; */
-
 }
 .forgot_input:focus{
   border: 0.5px solid #6a8fe5;
-
 }
-
 .reset_btn{
     margin-top: 10px;
     margin-bottom: 20px;
@@ -125,16 +106,13 @@
     font-size: 18px;
     font-weight: 700;
 }
-
 .errMsg{
     color: red;
     font-size: 14px;
-    /* padding: 5px; */
     padding-bottom: .5rem;
     margin-top: 5px;
     margin-left: .5rem;
 }
-
 .right_side ._logo_forgot{
     height: 220px;
     width: 150px;
@@ -142,7 +120,6 @@
     margin-top: -35.5rem;
     margin-left: -96px;
 }
-
 .reveal{
     position: absolute;
     z-index: 2;
@@ -151,7 +128,6 @@
     font-size: 20px;
     background-color: blue;
 }
-
 .reset_link{
     color: #0744D3;
     font-size: 13px;
