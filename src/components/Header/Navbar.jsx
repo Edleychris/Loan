@@ -7,7 +7,6 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import DropdownProfile from "../Header/Dropdowns/DropdownProfile";
 import DropNotify from "../Header/Dropdowns/DropNotify";
 import Dropmsg from "../Header/Dropdowns/Dropmsg";
-import PropTypes from "prop-types";
 import { AvatarInfo } from "../../Context";
 import { BsFillRecordFill } from "react-icons/bs";
 
@@ -74,6 +73,9 @@ function Navbar({ handleLogout }) {
   return (
     <div className={navstyle.nav_container}>
       <div className={navstyle.nav}>
+      {/* <div className={navstyle.nav_ham}>
+        <Sidemedia />
+        </div> */}
         <div className={navstyle.logo}>
           <img src={img1} alt="logo" />
         </div>

@@ -260,7 +260,6 @@
   }
 .main_login{
   margin-left: -4rem;
-  margin-top: -5rem;
 }
 .form_input{
   width: 300px;
@@ -280,17 +279,13 @@
   width: 300px;
 }
 .logo {
-  margin-left: -1rem;
-  margin-top: -25rem;
-  height: 40px;
-  position: absolute;
+  margin-left: 6rem;
+  display: flex;
+  align-self: center;
 }
 
 }
 @media screen and (max-width: 800px){
-  /* body{
-    background-color: red;
-  } */
   .body{
     display: flex;
     justify-content: center;
@@ -310,11 +305,13 @@
 
  }
  .logo {
-  margin-left: -3rem;
-  margin-top: -15rem;
-  height: 40px;
-  position: absolute;
+  margin-left: 12rem;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 30%;
 }
+
 .form_input{
   width: 500px;
   height: 60px;
@@ -331,9 +328,6 @@
 }
 }
 @media screen and (max-width: 700px){
-  /* body{
-    background-color: blue;
-  } */
   .logo {
     margin-left: -3rem;
     margin-top: -15rem;
@@ -362,9 +356,6 @@
   }
 }
 @media screen and (max-width: 500px){
-  /* body{
-    background-color: purple;
-  } */
   .main_login{
     width: 100vw;
     height: 100vh;
@@ -391,9 +382,6 @@
 }
 
 @media screen and (max-width: 450px){
-  /* body{
-    background-color: orange;
-  } */
   .main_login{
     width: 100vw;
     height: 100vh;
@@ -420,9 +408,6 @@
   }
 }
 @media screen and (max-width: 420px){
-  /* body{
-    background-color: gold;
-  } */
   .main_login{
     width: 100vw;
     height: 100vh;
@@ -435,9 +420,6 @@
   }
 }
 @media screen and (max-width: 360px){
-  /* body{
-    background-color: violet;
-  } */
   .main_login{
     width: 100vw;
     height: 100vh;

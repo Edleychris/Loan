@@ -40,3 +40,19 @@ a{
   text-decoration: none;
   color: #000000;
 }
+
+@media screen and (max-width: 800px) {
+  .PageContent{
+    display: flex;
+    margin-left: 40px;
+  }
+  .sideandpage{
+  /* display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-top: 20px; */
+  /* margin-top: 60px; */
+}
+
+}

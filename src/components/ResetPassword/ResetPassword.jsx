@@ -164,7 +164,6 @@ export const ResetPassword = ({ onSuccess }) => {
                 </p>
               </div>
 
-              {/* <div></div> */}
               <button
                 type="submit"
                 className={style.changePasswordBtn}

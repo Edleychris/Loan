@@ -1,13 +1,16 @@
 .nav_container{
     height: 60px;
-    /* border: 1px solid black; */
     position: fixed;
-    /* width: 1440px; */
     width: 100vw;
-    background: #FFFFFE;
+    /* background: #FFFFFE; */
     display: flex;
     justify-content: center;
     z-index: 99;
+    max-width: 1400px;
+}
+.nav_ham{
+    background-color: blue;
+    display: none;
 }
 .nav {
     display: flex;
@@ -15,41 +18,44 @@
     justify-content: space-between;
     height: 60px;
     width: 100%;
-    background-color: white;
+    /* background-color: white; */
 }
-
 .nav .links {
     width: 120px;
     display: flex;
     justify-content: space-between;
     margin-right: 5rem;
     align-items: center;
-
 }
-
 .logo{
     margin-left: 3rem;
 }
-
 .logo img {
     width: 100px;
 }
-
 .nav_icon {
     font-size: 25px;
     color: #04297F;
 }
-
 .links .profile_pic img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 2px solid #04297F;
-
 }
 .bsfillrecordfill{
     color: rgb(108, 218, 108);
     position: absolute;
     top: 1.9rem;
     margin-left: -1.5rem;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 800px) {
+    .nav{
+        margin-left: 4rem;
+    }
+}
+@media screen and (max-width: 750px) {
+
 }

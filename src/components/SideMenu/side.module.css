@@ -5,8 +5,12 @@
   background-color:#04297F;
   color: #fff;
 }
-
-.sidebarList ul{
+.side_ham{
+  position: absolute;
+  display: none;
+}
+.sidebarList ul,
+.sidebarHamList ul{
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -14,17 +18,20 @@
   text-decoration: none;
   gap: 5px;
 }
-.sidebarList li{
+.sidebarList li,
+.sidebarHamList li{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 15px;
 } 
-.sidebarList li:hover{
+.sidebarList li:hover,
+.sidebarHamList li:hover{
   background-color: rgb(169, 189, 209);
   color: #04297F;
 }
-.sidebarList li a{
+.sidebarList li a,
+.sidebarHamList li a{
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -38,20 +45,53 @@
   padding-left: 45px;
 
 }
-.sidebarList li a:hover{
+.sidebarList li a:hover,
+.sidebarHamList li a:hover{
   color: #04297F;
 }
 .sideicon{
   font-size: 20px;
 }
 
-.sidebarList li:nth-child(9){
+.sidebarList li:nth-child(9),
+.sidebarHamList li:nth-child(9){
   margin-top: 60px;
 }
-.sidebarList li a.active {
-background-color: #F0F4FC;
-  /* background-color: rgb(216, 220, 223); */
+.sidebarList li a.active,
+.sidebarHamList li a.active {
+  background-color: #F0F4FC;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   transition: background-color 0.4s ease, color 0.3s ease, box-shadow 0.3s ease;
   color: #04297F;
+}
+
+/* Media Query */
+@media screen and (max-width: 800px) {
+  .sidebarList{
+    display: none;
+  }
+  .side_ham{
+    display: block;
+  }
+  .side_hamIcon{
+    position: absolute;
+    top: -55px;
+    left: 30px;
+    padding: 10px;
+    z-index: 9999;
+    color: black;
+    font-size: 25px;
+    border-radius: 30%;
+  }
+  .side{
+    width: 0px;
+    z-index: 9999;
+  }
+  .sidebarHamList{
+    width: 228px;
+    height: 870px;
+    position: fixed;
+    background-color:#04297F;
+    color: #fff;
+  }
 }

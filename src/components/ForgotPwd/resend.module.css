@@ -15,10 +15,16 @@
     position: absolute;
     border: 1.5px solid #0744d3;
     background: #FFFFFE;
+    left: 0;
+    right: 0;
+    /* margin: 9rem 0; */
+    /* margin-left: 2rem; */
+    /* top: 0; */
+    /* bottom: 0; */
     top: 10rem;
     margin-right: 3rem;
-    width: 550px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     max-width: 1400px;
     transition: background-color 0.4s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -47,7 +53,7 @@
 }
 @media screen and (max-width: 1055px) { 
     .ResendcomfirmationContainer{
-        width: 107%;
+        width: 100%;
     } 
 }
 @media screen and (max-width: 950px) { 
@@ -57,13 +63,15 @@
 }
 @media screen and (max-width: 850px) { 
     .ResendcomfirmationContainer{
-        margin-right: 0rem;
-        width: 70%;
+        margin-left: 2rem;
+        width: 90%;
+        margin-top: 7rem;
     } 
 }
 @media screen and (max-width: 560px) {  
     .ResendcomfirmationContainer{
-        width: 90%;
+        width: 95%;
+        margin-left: .5rem;
     }
 }
 @media screen and (max-width: 350px) {  
