@@ -59,4 +59,18 @@
     margin-left: -.4rem;
   }
 
+
+  @media screen and (max-width: 1320px){
+    .settings_tab_container{
+      background-color: blue;
+      width: 75%;
+      /* width: 900px; */
+    }
+
+    .settings_tab_tabs{
+      background-color: red;
+      /* width: 75%; */
+      /* width: 900px; */
+    }
+  }
   

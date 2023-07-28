@@ -54,7 +54,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 20px 27px 1px 27px ;
+    padding: 20px 27px 1px 27px;
     justify-content: center;
     background-color: white;
     cursor: pointer;
@@ -334,3 +334,50 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 150px 150px;
 
 }
+
+@media screen and (max-width: 1320px){
+    .profilesettingsNav{
+        background-color: green;
+        width: 75%;
+    }
+
+    .settings_tab_container{
+      background-color: brown;
+      width: 75%;
+      padding: 20px 0px 15px 0px;
+      /* display: flex;
+      justify-content: flex-start;
+      align-items: flex-start; */
+      /* padding: 0; */
+    }
+
+    .settings_tab_header{
+        background-color: orange;
+        width: 100%;
+        /* display: flex;
+        justify-content: flex-start; */
+    }
+
+    .settings_tab_tabs{
+      background-color: red;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .settings_tab_tab{
+        background-color: rgb(238, 137, 154);
+        width: 100%;
+        /* padding: 20px 0px 1px 0px; */
+    }
+
+    .userProfile_settings_container{
+        background-color: purple;
+        width: 100%;
+    }
+
+    /* .general_set_Block{
+        background-color: orange;
+        width: 100%;
+    } */
+  }

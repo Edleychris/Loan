@@ -41,18 +41,17 @@ a{
   color: #000000;
 }
 
+@media screen and (max-width: 1320px) {
+  .PageContent{
+    width: 75%;
+    background-color: black;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .PageContent{
     display: flex;
     margin-left: 40px;
   }
-  .sideandpage{
-  /* display: flex;
-  flex: 1;
-  justify-content: flex-start;
-  align-content: flex-start;
-  margin-top: 20px; */
-  /* margin-top: 60px; */
-}
-
+  
 }
