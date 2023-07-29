@@ -51,11 +51,31 @@
 }
 
 /* MEDIA QUERY */
+@media screen and (max-width: 1320px){
+    .nav{
+        margin-left: 4rem;
+    }
+    .nav .links {
+        margin: 3rem;
+    }
+}
 @media screen and (max-width: 800px) {
     .nav{
         margin-left: 4rem;
     }
+    .nav .links {
+        margin-right: 35px;
+    }
 }
-@media screen and (max-width: 750px) {
-
+@media screen and (max-width: 500px) {
+    .nav_icon{
+        display: none;
+    }
+    .nav .links {
+        margin: 1rem;
+    }
+    .profile_pic{
+        margin-left: 3rem;
+        background-color: red;
+    }
 }

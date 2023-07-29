@@ -179,3 +179,448 @@
     margin-top: 3px;
     color: grey;
 }
+
+
+
+
+
+@media screen and (max-width: 1320px){
+    .notificationOverviewnNav{
+        /* background-color: green; */
+        width: 75%;
+    }
+    .settings_tab_container{
+      background-color: brown;
+      width: 75%;
+      padding: 20px 0px 15px 0px;
+    }
+
+    .settings_tab_header{
+        /* background-color: orange; */
+        width: 100%;
+    }
+    .settings_tab_tabs{
+      background-color: red;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      padding-left: 5px;
+      text-align: center;
+    }
+    .settings_tab_tab{
+      font-size: 14px;
+        /* background-color: rgb(238, 137, 154); */
+        width: 100%;
+        padding: 29px 17px 1px 17px;
+    }
+    .settings_tab_tab.active {
+        margin-top: .5rem;
+        border-bottom: 14px solid white;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        /* width: 10px ; */
+       }
+
+    .userProfile_settings_container{
+        width: 100%;
+    }
+    
+.notificationBlock{
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+    width: 115%;
+}
+
+.emailNotificationBlock{
+    width:100%;
+}
+.pushNotificationBlock{
+    width:100%;
+}
+.notification{
+    width: 100%;
+    padding-right: 25px;
+}
+
+}
+@media screen and (max-width: 1080px){
+    .notificationBlock{
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+        width: 105%;
+    }
+}
+@media screen and (max-width: 1040px) {
+.notificationOverviewnNav{
+    /* background-color: green; */
+    width: 70%;
+}
+.profileForm{
+    width: 100%;
+    /* background-color: red; */
+    gap: 3rem;
+}
+.settings_tab_container{
+    /* background-color: brown; */
+    width: 70%;
+    padding: 20px 0px 15px 0px;
+}
+.settings_tab_header{
+    /* background-color: orange; */
+    width: 100%;
+}
+
+.settings_tab_tabs{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    height: 50px;
+}
+
+    .settings_tab_tab{
+        /* background-color: rgb(238, 137, 154); */
+        width: 100%;
+        font-size: 14px;
+        padding: 20px 7px 1px 7px ;
+
+    }
+
+    .userProfile_settings_container{
+        /* background-color: purple; */
+        width: 100%;
+    }
+    .settings_tab_tab.active {
+        margin-top: .5rem;
+        padding: 10px 13px 10px 13px;
+        border-bottom: 5px solid white;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+       }
+       .settings_tab_tab:nth-child(3){
+        /* background-color: rgb(238, 137, 154); */
+        width: 100%;
+        font-size: 14px;
+        padding: 20px 1px 1px 1px ;
+
+    }
+    .general_set_Block_Block1{
+        width: 70%;
+        position: fixed;
+    }
+    .notificationBlock{
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+        width: 75%;
+    
+    }
+    .notificationBlock{
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+    .emailBlock,
+    .pushBlock{
+        width: 35%;
+    }
+    .emailNotificationBlock{
+        width:100%;
+    }
+    .pushNotificationBlock{
+        width:100%;
+    }
+    .notification{
+        width: 100%;
+        padding-right: 25px;
+    }
+
+}
+@media screen and (max-width:950px) {
+    .settings_tab_tab:nth-child(5){
+        /* background-color: rgb(238, 137, 154); */
+        width: 100%;
+        font-size: 14px;
+        padding: 20px 0px 1px 0px ;
+    }
+    .settings_tab_tab:nth-child(2){
+        /* background-color: rgb(238, 137, 154); */
+        width: 100%;
+        font-size: 14px;
+        padding: 20px 0px 1px 0px ;
+    }
+    .settings_tab_tab:nth-child(47){
+        /* background-color: rgb(238, 137, 154); */
+        width: 100%;
+        font-size: 14px;
+        padding: 20px 0px 1px 0px ;
+    }
+    .notificationBlock{
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+        width: 70%;
+    
+    }
+    .emailBlock,
+    .pushBlock{
+        width: 39%;
+    }
+    .notification{
+        width: 100%;
+        padding-right:10px ;
+    }
+    .notificationBlock{
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+        width: 95%;
+    }
+    
+}
+@media screen and (max-width: 910px) {
+    .settings_tab_tab:nth-child(2){
+        font-size: 13px;
+    } .settings_tab_tab:nth-child(3){
+        font-size: 13px;
+    } .settings_tab_tab:nth-child(4){
+        font-size: 13px;
+    } .settings_tab_tab:nth-child(5){
+        font-size: 13px;
+    }
+    .settings_tab_tab.active {
+        padding: 10px 1px 10px 1px;
+        border-bottom: 8px solid white;
+        font-size: 13px;
+        width: 30rem;
+       }
+}
+@media screen and (max-width: 900px) {
+    .notificationOverviewnNav{
+        width: 68%;
+    }
+    .settings_tab_container{
+        width: 68%;
+        padding: 20px 0px 15px 0px;
+
+      }
+      .settings_tab_tab:nth-child(3){
+        font-size: 13px;
+        height: 36px;
+    }
+    .notificationBlock{
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+    .notification p{
+        font-size: 12px;
+    }
+    .emailBlock,
+    .pushBlock{
+        width: 35%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .notificationOverviewnNav{
+        width: 90%;
+    }
+    .settings_tab_container{
+      width: 90%;
+      padding: 20px 0px 15px 0px;
+    }
+
+    .notificationBlock{
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+    
+    .emailNotificationBlock{
+        width:100%;
+    }
+    .pushNotificationBlock{
+        width:100%;
+    }
+    .notification{
+        width: 100%;
+        padding-right: 25px;
+        font-size: 14px;
+    }
+    .notification p{
+        font-size: 12px;
+    }
+    .emailBlock,
+    .pushBlock{
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .notificationOverviewnNav{
+        /* background-color: green; */
+        width: 88%;
+    }
+
+    .settings_tab_container{
+      /* background-color: brown; */
+      width: 88%;
+      padding: 20px 0px 15px 0px;
+    }
+    .settings_tab_tabs{
+        background-color: red;
+        background-color: rgba(240, 244, 252, 1);
+        width: 100%;
+        border: none;
+        display: flex;
+    align-items: flex-start;
+      height: 40px;
+    }
+
+      .settings_tab_tab.active {
+        margin-top: 0rem;
+        /* padding: 10px 13px 1px 13px; */
+        border-bottom: 2px solid #6A8FE5;
+        padding: 10px 10px 1px 10px ;
+        background-color: initial;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+        font-size: 16px;
+       }
+       .settings_tab_tab{
+        /* background-color: rgb(238, 137, 154); */
+        width: 100%;
+        font-size: 14px;
+        background-color: initial;
+        padding: 10px 17px 1px 17px ;
+
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .settings_next_page{
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin-top: .4rem;
+        margin-right: .5rem;
+        background-color: #6A8FE5;
+        opacity: .6;
+        border-radius: 50%;
+        font-weight: 800;
+        font-size: 18px;
+        height: 1.5rem;
+        width: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+        place-self: center;
+
+    }
+    .notificationOverviewnNav{
+        display: none;
+    }
+    .settings_tab_container{
+        margin-top: 0rem;
+        padding: 0;
+       }
+    .settings_tab_tabs{
+        margin-top: 0rem;
+        border-radius: 0;
+    }
+    .userProfile_settings_container{
+        margin-top: 2rem;
+        overflow-x: scroll;
+    }
+
+    .emailNotificationBlock,
+    .pushNotificationBlock{
+        display: flex;
+        flex-direction: column;
+    }
+    .notificationBlock{
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+    .emailBlock{
+        width: 100%;
+    }
+    .notification{
+        width: 100%;
+    }
+    .emailBlock,
+    .pushBlock{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 470px) {
+    .notificationBlock{
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        width: 85%;
+    }
+    .emailBlock{
+        width: 100%;
+    }
+    .notification{
+        width: 100%;
+    }
+    .emailBlock,
+    .pushBlock{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .notificationBlock{
+        width: 75%;
+    }
+    .emailBlock{
+        width: 100%;
+    }
+    .notification{
+        width: 100%;
+    }
+    .emailBlock,
+    .pushBlock{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 380px) {
+    .notificationBlock{
+        width: 65%;
+    }
+    .emailBlock{
+        width: 100%;
+    }
+    .notification{
+        width: 100%;
+    }
+    .emailBlock,
+    .pushBlock{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 338px) {
+    .notificationBlock{
+        width: 55%;
+    }
+    .emailBlock{
+        width: 100%;
+    }
+    .notification{
+        width: 100%;
+    }
+    .notificationText h5{
+        font-size: 12px;
+    }
+    .notification p{
+        font-size: 10px;
+    }
+    .emailBlock,
+    .pushBlock{
+        width: 100%;
+    }
+}

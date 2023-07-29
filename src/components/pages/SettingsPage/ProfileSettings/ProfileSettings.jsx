@@ -3,6 +3,7 @@ import style from "./profilesettings.module.css";
 import { Link, Outlet } from "react-router-dom";
 import profileData from "./ProfileData";
 import { BiChevronRight, BiCamera } from "react-icons/bi";
+import {BsArrowRight, BsArrowLeft} from 'react-icons/bs'
 import empty from '../../../../assets/Default_pfp.svg.png';
 import { AvatarInfo } from "../../../../Context";
 import ProfileComfirm from "./ProfileComfirm";
@@ -24,6 +25,20 @@ export const ProfileSettings = () => {
   const fileInputRef = useRef(null);
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = (direction) => {
+    const container = document.getElementById('tabContainer');
+    const scrollAmount = 200; // Adjust this value to control the scroll amount
+
+    if (direction === 'left') {
+      container.scrollLeft -= scrollAmount;
+    } else if (direction === 'right') {
+      container.scrollLeft += scrollAmount;
+    }
+    setScrollPosition(container.scrollLeft);
+  };
 
   const handleStatusToggle = (toggleValue) => {
     setStatus((prevStatus) => (prevStatus == "Active" ? "Inactive" : "Active"));
@@ -185,62 +200,71 @@ export const ProfileSettings = () => {
             <BiChevronRight className={style.icon} />
             <Link to="#">Profile</Link>
           </div>
-          <div className={style.settings_tab_container}>
-            <div className={style.settings_tab_header}>
-              <div className={style.settings_tab_tabs}>
-              <Link to="/settings">
-                <div
-                  className={`${style.settings_tab_tab} ${
-                    activeTab === "General" ? style.active : ""
-                  }`}
-                  onClick={() => handleTabClick("General")}
-                >
+          <div className={style.settings_tab_container} id="tabContainer">
+        <div className={style.settings_tab_header}>
+          <div className={style.settings_tab_tabs}>
+            <Link to="/settings">
+              <div
+                className={`${style.settings_tab_tab} ${
+                  scrollPosition === 0 && scrollPosition < 1? style.active : ''
+                }`}
+                onClick={() => setScrollPosition(0)}
+              >
                 General
-                </div>
-                </Link>
-                <Link to="/settings/profile">
-                <div
-                  className={`${style.settings_tab_tab} ${
-                    activeTab === "Profile" ? style.active : ""
-                  }`}
-                  onClick={() => handleTabClick("Profile")}
-                >
-                  Profile
-                </div>
-                </Link>
-                <Link to="/settings/userPermission">
-                <div
-                  className={`${style.settings_tab_tab} ${
-                    activeTab === "User Permissions" ? style.active : ""
-                  }`}
-                  onClick={() => handleTabClick("User Permissions")}
-                >
-                  User Permissions
-                </div>
-                </Link>
-                <Link to="/settings/notification">
-                <div
-                  className={`${style.settings_tab_tab} ${
-                    activeTab === "Notifications" ? style.active : ""
-                  }`}
-                  onClick={() => handleTabClick("Notifications")}
-                >
-                Notifications
-                </div>
-                </Link>
-                <Link to="/settings/security">
-                <div
-                  className={`${style.settings_tab_tab} ${
-                    activeTab === "Security" ? style.active : ""
-                  }`}
-                  onClick={() => handleTabClick("Security")}
-                >
-                  Security
-                </div>
-                </Link>
               </div>
-            </div>
+            </Link>
+            <Link to="/settings/profile">
+              <div
+                className={`${style.settings_tab_tab} ${
+                  scrollPosition >= 1 ? style.active : ''
+                }`}
+                onClick={() => setScrollPosition(1)}
+              >
+                Profile
+              </div>
+            </Link>
+            {/* Add more Link elements for other tabs */}
+            <Link to="/settings/userPermission">
+              <div
+                className={`${style.settings_tab_tab} ${
+                  scrollPosition >= 2 && scrollPosition < 3 ? style.active : ''
+                }`}
+                onClick={() => setScrollPosition(2)}
+              >
+                User Permissions
+              </div>
+            </Link>
+            <Link to="/settings/notification">
+              <div
+                className={`${style.settings_tab_tab} ${
+                  scrollPosition >= 3 && scrollPosition < 4 ? style.active : ''
+                }`}
+                onClick={() => setScrollPosition(3)}
+              >
+                Notifications
+              </div>
+            </Link>
+            <Link to="/settings/security">
+              <div
+                className={`${style.settings_tab_tab} ${
+                  scrollPosition >= 4 && scrollPosition < 4 ? style.active : ''
+                }`}
+                onClick={() => setScrollPosition(4)}
+              >
+                Security
+              </div>
+            </Link>
           </div>
+        </div>
+      </div>
+      <div className={style.settings_next_page}>
+        <button onClick={() => handleScroll('left')}>
+          <BsArrowLeft />
+        </button>
+        <button onClick={() => handleScroll('right')}>
+          <BsArrowRight />
+        </button>
+      </div>
           <div>
             <div className={style.userProfile_settings_container}>
               <div className={style.user_block}>
@@ -286,7 +310,6 @@ export const ProfileSettings = () => {
                 </p>
                 <p>
                   Status:
-                  {/* <span className={style.status}>{status}</span> */}
                   <span className={status === "Active" ? style.activeStatus : style.inactiveStatus}>{status}</span>
                 </p>
               </div>

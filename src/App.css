@@ -41,10 +41,32 @@ a{
   color: #000000;
 }
 
+
+@media screen and (max-width: 1320px) {
+  .PageContent{
+    width: 75%;
+    /* background-color: black; */
+  }
+}
+@media screen and (max-width: 1040px) {
+  .PageContent{
+    width: 70%;
+    /* background-color: orange; */
+  }
+}
+@media screen and (max-width: 900px) {
+  .PageContent{
+    width: 68%;
+    /* background-color: orange; */
+  }
+}
 @media screen and (max-width: 800px) {
   .PageContent{
     display: flex;
     margin-left: 40px;
+    width: 90%;
+    /* background-color: rgb(65, 48, 18); */
+
   }
   .sideandpage{
   /* display: flex;
@@ -55,4 +77,13 @@ a{
   /* margin-top: 60px; */
 }
 
+}
+@media screen and (max-width: 700px) {
+  .PageContent{
+    display: flex;
+    margin-left: 40px;
+    width: 88%;
+    /* background-color: blanchedalmond; */
+
+  }
 }

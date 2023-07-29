@@ -71,7 +71,6 @@
     margin-top: 1rem;
     padding: 10px 23px 10px 23px;
     border-bottom: 8px solid white;
-   
     background-color: white;
     background-color: white;
     font-size: 16px;
@@ -145,28 +144,6 @@
     border: 1px solid #0744D3;
 }
 
-/* .darkmodeBlock{
-    display: flex;
-    align-items: center;
-}
-
-.switch{
-    background-color: #0744D3;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 76px;
-    height: 40px;
-    border-radius: 12px;
-} */
-
-/* .nightIcon{
-    height: 20px;
-    width: 18px;
-    font-size: 10px;
-} */
-
 .language{
     display: block;
 }
@@ -179,7 +156,7 @@
     width: 1023px; 
     padding: 5px;
     color: rgba(0, 0, 0, 0.3);
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
     border: none;
     border-radius: 8px;
     outline: none;
@@ -187,4 +164,309 @@
 
 .form_select option{
     color: black;
+}
+
+
+
+@media screen and (max-width: 1320px){
+    .generalNav{
+        /* background-color: green; */
+        width: 75%;
+    }
+    .settings_tab_container{
+      background-color: brown;
+      width: 75%;
+      padding: 20px 0px 15px 0px;
+    }
+
+    .settings_tab_header{
+        /* background-color: orange; */
+        width: 100%;
+    }
+    .settings_tab_tabs{
+      background-color: red;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      padding-left: 5px;
+      text-align: center;
+    }
+    .settings_tab_tab{
+      font-size: 14px;
+        /* background-color: rgb(238, 137, 154); */
+        width: 100%;
+        padding: 29px 17px 1px 17px;
+    }
+    .settings_tab_tab.active {
+        margin-top: .5rem;
+        border-bottom: 14px solid white;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        /* width: 10px ; */
+       }
+
+    .userProfile_settings_container{
+        /* background-color: purple; */
+        width: 100%;
+    }
+    .general_set_Block_Block1{
+        width: 75%;
+        position: fixed;
+    }
+    .general_set_Block{
+        width: 100%;
+
+    }
+    
+
+  }
+@media screen and (max-width: 1040px) {
+    .generalNav{
+        /* background-color: green; */
+        width: 70%;
+    }
+.profileForm{
+    width: 100%;
+    /* background-color: red; */
+    gap: 3rem;
+
+}
+.user_wrapper input, .user_wrapper span{
+    width: 280px;
+    padding: 7px;
+    border-radius: 5px;
+    outline: none;
+    border: 0.5px solid #EBEBEB;
+    color: #999CA0;
+    font-size: 16px;
+}
+    .settings_tab_container{
+      /* background-color: brown; */
+      width: 70%;
+      padding: 20px 0px 15px 0px;
+    }
+
+    .settings_tab_header{
+        /* background-color: orange; */
+        width: 100%;
+    }
+
+    .settings_tab_tabs{
+      /* background-color: red; */
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+    height: 50px;
+
+    }
+
+    .settings_tab_tab{
+        /* background-color: rgb(238, 137, 154); */
+        width: 100%;
+        font-size: 14px;
+        padding: 20px 7px 1px 7px ;
+
+    }
+
+    .userProfile_settings_container{
+        /* background-color: purple; */
+        width: 100%;
+    }
+    .settings_tab_tab.active {
+        margin-top: .5rem;
+        padding: 10px 13px 10px 13px;
+        border-bottom: 5px solid white;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+       }
+       .settings_tab_tab:nth-child(3){
+        /* background-color: rgb(238, 137, 154); */
+        width: 100%;
+        font-size: 14px;
+        padding: 20px 1px 1px 1px ;
+
+    }
+    .general_set_Block_Block1{
+        width: 70%;
+        position: fixed;
+    }
+
+}
+@media screen and (max-width:950px) {
+    .settings_tab_tab:nth-child(5){
+        /* background-color: rgb(238, 137, 154); */
+        width: 100%;
+        font-size: 14px;
+        padding: 20px 0px 1px 0px ;
+    }
+    .settings_tab_tab:nth-child(2){
+        /* background-color: rgb(238, 137, 154); */
+        width: 100%;
+        font-size: 14px;
+        padding: 20px 0px 1px 0px ;
+    }
+    .settings_tab_tab:nth-child(47){
+        /* background-color: rgb(238, 137, 154); */
+        width: 100%;
+        font-size: 14px;
+        padding: 20px 0px 1px 0px ;
+    }
+
+    
+}
+@media screen and (max-width: 910px) {
+    .settings_tab_tab:nth-child(2){
+        font-size: 13px;
+    } .settings_tab_tab:nth-child(3){
+        font-size: 13px;
+    } .settings_tab_tab:nth-child(4){
+        font-size: 13px;
+    } .settings_tab_tab:nth-child(5){
+        font-size: 13px;
+    }
+    .settings_tab_tab.active {
+        padding: 10px 1px 10px 1px;
+        border-bottom: 8px solid white;
+        font-size: 13px;
+        width: 30rem;
+       }
+}
+@media screen and (max-width: 900px) {
+    .generalNav{
+        /* background-color: green; */
+        width: 68%;
+    }
+    .settings_tab_container{
+        /* background-color: brown; */
+        width: 68%;
+        padding: 20px 0px 15px 0px;
+
+      }
+      .settings_tab_tab:nth-child(3){
+        font-size: 13px;
+        /* padding: 6px 0 0 0; */
+        height: 36px;
+    }
+    .general_set_Block_Block1{
+        width: 68%;
+        position: fixed;
+    }
+  
+}
+@media screen and (max-width: 800px) {
+    .generalNav{
+        /* background-color: green; */
+        width: 90%;
+    }
+
+    .settings_tab_container{
+      /* background-color: brown; */
+      width: 90%;
+      padding: 20px 0px 15px 0px;
+    }
+    .userProfile_settings_container{
+        /* background-color: purple; */
+        width: 100%;
+        /* padding: 10px; */
+    }
+    .general_set_Block_Block1{
+        width: 90%;
+        position: fixed;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .generalNav{
+        /* background-color: green; */
+        width: 88%;
+    }
+
+    .settings_tab_container{
+      /* background-color: brown; */
+      width: 88%;
+      padding: 20px 0px 15px 0px;
+    }
+    .settings_tab_tabs{
+        background-color: red;
+        background-color: rgba(240, 244, 252, 1);
+        width: 100%;
+        border: none;
+        display: flex;
+        align-items: flex-start;
+      height: 40px;
+      }
+
+      .settings_tab_tab.active {
+        margin-top: 0rem;
+        /* padding: 10px 13px 1px 13px; */
+        border-bottom: 2px solid #6A8FE5;
+        padding: 10px 10px 1px 10px ;
+        background-color: initial;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+        font-size: 16px;
+       }
+       .settings_tab_tab{
+        /* background-color: rgb(238, 137, 154); */
+        width: 100%;
+        font-size: 14px;
+        background-color: initial;
+        padding: 10px 17px 1px 17px ;
+
+    }
+    .general_set_Block_Block1{
+        width: 88%;
+        position: fixed;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    .settings_next_page{
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin-top: .4rem;
+        margin-right: .5rem;
+        background-color: #6A8FE5;
+        opacity: .6;
+        border-radius: 50%;
+        font-weight: 800;
+        font-size: 18px;
+        height: 1.5rem;
+        width: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+        place-self: center;
+
+    }
+    .generalNav{
+        display: none;
+    }
+    .settings_tab_container{
+        margin-top: 0rem;
+        padding: 0;
+       }
+    .settings_tab_tabs{
+        margin-top: 0rem;
+        border-radius: 0;
+        /* background-color: green; */
+    }
+    .userProfile_settings_container{
+        margin-top: 2rem;
+        overflow-x: scroll;
+    }
+    .settings_tab_tab{
+        background-color: blue;
+    } 
+    .general_set_Block_Block1{
+        position: fixed;
+        margin-top: 3rem;
+    }
 }
